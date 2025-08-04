@@ -1,0 +1,293 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+.logo {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.secondHalfImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+  border-radius: 100px;
+  width: 10rem;
+  height: auto;
+}
+
+header{
+  position: sticky;
+  top:0px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.navbar img{
+  border:3px solid white;
+  border-radius: 100px;
+  height: 70px;
+  width:70px;
+}
+
+.nav-list {
+  display:flex;
+}
+
+.nav-list li a:hover{
+  color: rgb(128, 128, 128);
+  font-size: 20px;
+}
+
+.nav-list li {
+  list-style-type: none;  
+  padding-top: 1.6rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  padding-left: 5rem;
+  color:aliceblue;
+}
+
+.right-Nav{
+  padding-top: 1rem;
+  width:45%;
+  text-align: center;
+}
+
+.btn-sm {
+  margin-left: 4px;
+}
+
+.btn {            
+  border:1px solid white;
+  border-radius: 3px;
+  color:aliceblue;
+  background-color: transparent;
+  padding:6px;
+  width:7rem;
+}
+
+.btn:hover{
+  cursor:pointer;
+  background-color: rgba(190, 99, 138, 0.97);
+  transition: all 0.3s ease-in-out;
+  width:8rem;
+  padding:7px;
+}
+
+#search{
+  border:3px solid black;
+  border-radius: 9px;
+  width:15rem;
+  height:1.5rem;
+}
+
+body{
+  background-color: #de7e5b;
+  font-weight: bold;
+}
+
+#search:hover{
+  border:2px solid rgba(255, 166, 0, 0.454);
+  padding:5px;
+  font-size: 17px;
+}
+
+.background{
+  background: url("images/images (2).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode:darken;
+}
+
+.first-Section{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstHalf{
+  width:80%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:7rem ;
+}
+
+.secondHalf{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top:3rem ;
+}
+
+.box-Main{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 50%;
+  color:white;
+}
+
+.text-big{
+  font-size: 1.6rem;
+}
+
+.paras{
+  padding:0px 65px;
+}
+
+.section{
+  height:400px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.section-left{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.thumbnail img{
+  border:3px solid black;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.contact{
+  height: 533px;
+}
+
+.text-Center{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.form{
+  max-width: 700px;
+  margin: 42px auto;
+  font-size: 35px;
+}
+
+.form-input{
+  width:100%;
+  padding: 5px 3px;
+  margin: 14px 0px;
+  font-size: 19px;
+  border-radius: 6px;
+}
+
+.btn-dark{
+  border:3px solid black;
+  color:black;
+}
+
+.text-Footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:30px 0px;
+  text-align: center;
+  color:white;
+}
+
+.burger{
+  position: absolute;
+  cursor: pointer;
+  right:5%;
+  top:15px;
+  display: none;
+  z-index: 1000;
+}
+
+.line{
+  width:33px;
+  height:4px;
+  background-color: white;
+  margin: 5px 3px;
+}
+
+.h-nav {
+  height: auto;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Responsive website */
+
+@media only screen and (max-width:1152px) {
+  .nav-list{
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar{
+    flex-direction: column;
+    transition: all 0.9s ease-in-out;
+  }
+  .right-Nav{
+    text-align: center;
+  }
+  #search{
+    width: 100%;
+  }
+  .burger{
+    display: block;
+  }
+  .nav-h{
+    height:69px;
+  }
+  .v-class{
+    display: none;
+    opacity: 0;
+  }
+  .nav-list,
+  .right-Nav {
+    transition: all 0.5s ease-in-out;
+  }
+  .text-big, .text-small, .button{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .right-Nav{
+    flex-direction:column;
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (min-width:862px) and (max-width:1150px) {
+  .right-Nav{
+    padding-top: 1rem;
+    padding-left: 290px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .secondHalfImg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
