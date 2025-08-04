@@ -109,7 +109,7 @@ body{
 }
 
 .background{
-  background: url("images/images (2).jpg");
+  background: url("images (2).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode:darken;
@@ -291,3 +291,4 @@ html{
     display: block;
   }
 }
+
